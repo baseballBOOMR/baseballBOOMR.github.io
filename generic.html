@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About BOOMR</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">BOOMR</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="elements.html">Elements</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>About BOOMR</h2>
+							<p></p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>BOOMR</h3>
+                                <hr />
+								<p>www.baseballBOOMR.com is my website for showing my Batting Order Optimization Method Results. The results are from calculations that take hitting stats from the MLB after then games of the day are finished, then shows what the optimal (most runs per game=RPG) starting lineups are compared to the managers' SLUs.
+<br/>
+BOOM does this by testing all 9! = 362, 800 possible LUs of 9 batters for each team. The results are shown on EXCEL spreadsheets linked on the homepage of this website. So yes, www.baseballBOOMR.com works best if you have some version of EXCEL (not even the latest...I'm using EXCEL 2003...) on your computer.
+<br/>
+BOOM takes into account 12 stats per batter: <br/>
+AB Hits 2B 3B HR BB SB CS HPB SacFly Bunt GDP. <br/>
+Other links on the homepage direct you to tests of BOOM's accuracy, comparing its results to various LUs that can be worked out by slower "brute force" calculations.
+<br/>
+Only earned runs in BOOM: Note that BOOM does not take into account, or create in its "simulated games", errors.
+<br/>
+AL vs NL: You can imagine that BOOM calculations are more straightforward for the AL because of the designated hitter rule. For the NL BOOM inserts stats for a "generic pitcher" into the place where the pitcher hits. Thus for NL teams BOOM considers the generic pitcher in its calculations...every once in a while the optimal LU doesn't have the pitcher hitting last.
+<br/>
+Number of at-bats (AB): You can appreciate that if it is April and there are few current season at-bats for hitters, the results of BOOM won't be very stable. What I do is bring in the stats from the end of the previous season and combine them with the current season such that by June 1st only stats from the current season are used. For example, but the end of April the current season is weight about 50% and the previous season about 50% in the stats used for optimal batting order calculation.
+<br/>
+For rookies however, I just use the current-season stats.
+<br/>
+Bringing in a player from the bench: Each team has 3-5 hitters on the bench ready to come in as pinch hitters. A section of BOOM tries to find a reasonable swap of a SLU player for someone from the bench (depending on what positions they can play). If a swap can be found then an a new "optimal lineup" is found and the resulting improved RPG is shown. All this on the same spreadsheet as the managers' SLUs compared to the optimal.
+<br/>
+The Batter Clone Rating (BCR): If a lineup consists of the same player batting in all 9 positions, then there is no "optimal lineup" but the resulting RPG becomes a quantitative single measure of the one player's batting skill.
+<br/>
+Consider that all you need to know for evaluation a pitcher is the ERA. Yes it might be interesting to know how many strikeouts the pitcher has thrown, or how many walks he gives up, or what is win-loss record is, but the ERA is the best quantitative measure of the pitcher. The lower the ERA the better.
+<br/>
+A hitter's BCR is like a pitcher's ERA, only the larger the BCR the better. Like the E for "earned" in ERA, the BCR is an "earned runs" metric.
+<br/>
+Another "essay" on the BOOMR website (here) compares BCR to RC27, an empircal stat that would appear by its name, "Runs Created in 27 Innings," to be the same thing as BCR, but it is shown that BCR is a more accurate such number, and results in a correct ranking of top hitters in the AL and NL.
+<br/>
+The spreadsheets that show BCR rankings for AL and NL use current-season stats only. As the season goes on and more plate appearances are accumulated, the BCRs fluctuate less. I am particularly interested to see rookies break in near the top of the rankings--Kris Bryant of the Cubs being #1 and Joc Pederson of the Dodgers being #2 on my list.
+<br/>
+EXCEL workbooks: While I have been using the word "spreadsheets" when saying how the results are display, what you actually download when you click on a link for optimal lineups or BCR ranking, is a workbook. The workbook has as many spreadsheets as there are days in the month (April -- Sept). July has 4 blank sheets because of the All Star break. In 2015 April started with 4 blank sheets because the season didn't start until April 5. At any rate the sheets are named as tabs at the bottom of the workbook and clicking on a day tab brings up the appropriate spreadsheet. I try to put my ©JD Daniels 2015 mark on each sheet, but your are free to play with the sheets as you see fit, having downloaded them to look at a particular month. 
+In May I activate the EXCEL workbook that has computed ERAs of pitchers (with IP min) in both leagues. Yes, the ERA itself is a definite stat that counts a pitcher's earned runs scored against per nine innings. But it is possible to use the (12) hitting stats (doubles, triples, BB, HBPB etc) against a pitcher as data input to a BCR calculator, and come up with a computed ERA. The computed ERA will be positively correlated (above 0.8) with the actual ERA, but in each pitcher's case the computed ERA will be either greater than or less than the actual ERA. If the computed ERA is greater than the actual ERA you might validly conclude that the pitcher is effective at getting out of jams.
+For 2015 Spring Training I kept track of the BCRs of all hitters with 10 or more at-bats, and a link for that workbook is on the homepage. That's where Kris Bryant (Cubs) came to light as the best hitter in MLB during spring training...
+<br/>
+Message of the Day: In addition to posting 7 spreadsheets each day to the website, I create Message of the Day (MOD) where I may disscuss the data in the sheets, or offer opinions about who should bat where and who the All Stars are at each position. In regard to the MOD and it archive, then, www.baseballBOOMR.com is my blog about MLB hitting and hitters (or batting and batters... if you walk, get hit by a pitched ball and steal bases, you too contribute to the RPGs!) A spreadsheet-driven baseball blog...
+<br/>
+I think for the Optimal Batting Orders and the ranking of hitters by BCR (and even MOD) tht baseballBOOMR will be of (daily) interest to: <br/>
+> fans <br/>
+fantasy baseball fans<br/>
+> players and their agents <br/>
+> coaches, managers, GMs and team owners<br/>
+> MLB beat reporters for the daily newspapers in each MLB city<br/>
+> Sport TV: ESPN and MLB_TV
+<br/>
+<h4>Contact: baseballboomr@gmail.com</h4> 
+                                </p>
+
+								<hr />
+
+								
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Jerry Daniels 2015</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
